@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* this is fine */
+  overflow-y: auto;   /* make sure this is allowed */
+}
+
+
+header {
+  background: #c99f9f;
+  color: #0a0600;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+.intro {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: #420303;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: #131212;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2em;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.highlight {
+  color: #042f5c;
+}
+
+.content-section {
+  padding: 2em;
+  background: #c73f93d5;
+  margin: 1em auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.87);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.8em;
+  border: none;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1em;
+  margin-top: 2em;
+  /* remove this if it's there:
+  position: fixed;
+  bottom: 0;
+  width: 100%; 
+  */
+}
+
+
+
+/* Responsive menu */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #332e2e;
+    padding: 1em;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+

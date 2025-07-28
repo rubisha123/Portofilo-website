@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPort | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">DevPort</div>
+    <button id="menu-toggle">☰</button>
+    <nav id="navbar">
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  <main>
+    <section class="hero">
+      <img src="assets/profile.png" alt="Profile Picture" class="profile-img" />
+      <h1>Hello, I'm <span class="highlight">Saira Khan</span></h1>
+      <p>Aspiring Front-End Developer | Machine Learning | Advanced Python | Graphic Design</p>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Me</h2>
+      <p>I'm passionate about creating responsive and user-friendly websites. I love working with HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <ul>
+        <li> Coffee Website</li>
+        <li> Nexify</li>
+        <li> Portfolio Website</li>
+        <li>etc</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> DevPort</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
